@@ -2,6 +2,11 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
+     <meta property="og:url"           content="http://fantooface.in/index.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Fantooface:Sharing knowledge" />
+    <meta property="og:description"   content="Fantooface community" />
+    <meta property="og:image"         content="http://fantooface.in/style/images/icon-facebook.png" />
 <title>Fantooface</title>
 <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />
@@ -62,6 +67,26 @@ $(document).ready(function()
 
 </head>
 <body>
+ <script>
+     window.fbAsyncInit = function () {
+         FB.init({
+             appId: '1186394268040609',
+             xfbml: true,
+             version: 'v2.5'
+         });
+     };
+
+     (function (d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) { return; }
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+</script>
+
+    <!-- Your like button code -->
+   
 <!-- Fullscreen backgrounds -->
 <div id="thumbs">
 <a href="style/images/art/bg1.jpg">1</a>
@@ -112,6 +137,7 @@ $(document).ready(function()
       <li><a href="typography.html">Tutorial</a>      	
       </li>
       <li><a  href="contact.html">Contact</a></li>
+        
     </ul>
     <br style="clear: left" />
   </div>
@@ -167,6 +193,12 @@ $(document).ready(function()
     <div class="two-third">
       <p>Vivamus sodales pharetra libero, a tincidunt nisi condimentum a. Quisque non sodales nislero. Integer a tellus eget arcu fringilla molestie quis vel eros. Praesent fermentum vulputate purusa ornare. Vivamus imperdiet, quam et adipiscing placerat, nibh odio scelerisque risus, vitaere accumsan mi justo et quam. Pellentesque quis felis quis tortor porttitor lobortis nec ac risus.</p>
     </div>
+      <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
     <div class="one-third last">
       <ul>
         <li>Vivamus at magna non ipsum.</li>
@@ -291,9 +323,9 @@ $(document).ready(function()
   <div id="copyright" class="opacity">
     <p>© 2011 Fantooface. All Right Reserved.</p>
   </div>
+    
 </div>
 <!-- End Wrapper --> 
-
 <script type="text/javascript" src="style/js/scripts.js"></script>
 </body>
 </html>
