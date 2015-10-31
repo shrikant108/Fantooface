@@ -10,5 +10,7 @@ namespace Fantooface.Models
         public int UserId;
         public string DisplayName;
         public string UserName;
+        public string EmailId;
+        public string UserRole;
     }
 }
